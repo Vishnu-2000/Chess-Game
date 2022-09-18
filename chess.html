@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>
+            Chess Board
+        </title>
+       
+        <link rel="stylesheet" href="chess.css" type="text/css">
+    </head>
+    <body>
+            <div id="wrapper" style="visibility: hidden;">
+            <table class="tbl">
+                
+            <tr>
+                
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♜</td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♞</td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♝</td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♛</td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♚</td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♝</td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♞</td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♜</td>
+            </tr>
+            <tr>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♟</td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♟</td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♟</td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♟</td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♟</td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♟</td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♟</td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="Black">♟</td>
+            </tr>
+        
+            <tr>
+               <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+               <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+               <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+               <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+               <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+               <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+               <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+               <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+            </tr>
+            <tr>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+             </tr>
+             <tr>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+             </tr>
+             <tr>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="false"></td>
+             </tr>
+             <tr>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♙</td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♙</td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♙</td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♙</td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♙</td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♙</td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♙</td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♙</td>
+             </tr>
+             <tr>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♖</td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♘</td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♗</td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♔</td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♕</td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♗</td>
+                <td class="bl" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♘</td>
+                <td class="wt" onmouseover="tooltip(this)" onclick="return change(this)" draggable="true" id="White">♖</td>
+             </tr>
+        </table>
+        
+        <label id="turn"></label>
+
+        </div>
+        
+        <br>
+        <button class="btn" onclick="buttononclick(this)">Play Now!!<span class="clk" style="width: 100px;height: 20px;font-size: 15px;">Click Button</span></button>
+
+    </body>
+    <script src="chess_input.js" type="text/javascript"></script>  
+    <script src="chess.js" type="text/javascript"></script>
+                
+</html>
